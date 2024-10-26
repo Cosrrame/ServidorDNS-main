@@ -1,0 +1,15 @@
+acl confiables {
+  192.168.57.0/24;
+};
+  
+
+options {
+  directory "/var/cache/bind";
+  allow-transfer { none; };
+  listen-on port 53 { 192.168.57.103; };
+  recursion yes;
+  allow-recursion { confiables; };
+  dnssec-validation yes;
+  // listen-on-v6 { any; };
+};
+

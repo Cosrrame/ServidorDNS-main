@@ -1,0 +1,2 @@
+#No se deberá tener bajo control de versiones el directorio .vagrant ni los ficheros de backup.
+.vagrant/
